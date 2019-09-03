@@ -3,21 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
+    android:id="@+id/backview"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/test_jni_one"
-        android:text="test_jni_one"
+        android:text="1"
+        android:paddingVertical="@dimen/dp_14"
         android:layout_width="wrap_content"
+        android:paddingHorizontal="100dp"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/test_jni_two"
-        android:text="test_jni_two"
+        android:text="2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/drag1"
+        android:text="拖动decorview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/drag2"
+        android:text="拖动backview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/reset"
+        android:text="reset_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/getbg"
+        android:text="获取背景色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.fish.testjni.SectionGroup
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </com.fish.testjni.SectionGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

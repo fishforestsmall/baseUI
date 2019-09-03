@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation|fontScale|screenSize">
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+            <meta-data
+                android:name="android.max_aspect"
+                android:value="2.2" />
+            <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape" />
+        </activity>
+
     </application>
 
 </manifest>
